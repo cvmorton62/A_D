@@ -1,4 +1,4 @@
-﻿namespace VR.Domain
+﻿namespace A_D.Domain
 {
     public class SampleCCOMap
     {

@@ -18,7 +18,7 @@ namespace A_D.Data.Configuration
                 .HasForeignKey("VisitCode_Id")
                 .OnDelete(DeleteBehavior.Restrict);
             builder.Property(p => p.Date).HasColumnType("date");
-            builder.HasIndex(p => new {p.ProjectQOL_Facility_Id, p.VisitCode_Id}).IsUnique();
+            builder.HasIndex(p => new { p.ProjectQOL_Facility_Id, p.VisitCode_Id }).IsUnique();
             builder.Property(p => p.DateCreate).HasDefaultValueSql("GETDATE()").ValueGeneratedOnAdd();
             builder.Property(p => p.SourceCreate).HasMaxLength(200);
             builder.Property(p => p.SourceModify).HasMaxLength(200);

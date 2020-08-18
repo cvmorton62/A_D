@@ -1,5 +1,4 @@
 ﻿using System;
-using VR.Domain;
 
 namespace A_D.Domain.Models
 {

@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using A_D.Domain.Models;
+﻿using A_D.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace A_D.Data.Configuration
 {
-    public class DocumentFormatConfiguration:IEntityTypeConfiguration<DocumentFormat>
+    public class DocumentFormatConfiguration : IEntityTypeConfiguration<DocumentFormat>
     {
         public void Configure(EntityTypeBuilder<DocumentFormat> builder)
         {

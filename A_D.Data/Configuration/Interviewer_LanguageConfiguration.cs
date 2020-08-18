@@ -17,7 +17,7 @@ namespace A_D.Data.Configuration
                 .WithMany(l => l.Interviewers_Languages)
                 .HasForeignKey("Language_Id")
                 .OnDelete(DeleteBehavior.Restrict);
-            builder.HasIndex(i => new {i.Interviewer_Id, i.Language_Id}).IsUnique();
+            builder.HasIndex(i => new { i.Interviewer_Id, i.Language_Id }).IsUnique();
         }
     }
 }

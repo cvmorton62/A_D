@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace A_D.Domain.Models
+﻿namespace A_D.Domain.Models
 {
     public class SampleRateRepresentative
     {

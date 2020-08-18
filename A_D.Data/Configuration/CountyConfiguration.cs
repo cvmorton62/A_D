@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using A_D.Domain.Models;
+﻿using A_D.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace A_D.Data.Configuration
 {
-    public class CountyConfiguration:IEntityTypeConfiguration<County>
+    public class CountyConfiguration : IEntityTypeConfiguration<County>
     {
         public void Configure(EntityTypeBuilder<County> builder)
         {

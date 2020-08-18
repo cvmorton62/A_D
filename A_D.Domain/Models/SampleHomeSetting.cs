@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using A_D.Domain.Models;
+﻿using A_D.Domain.Models;
+using System.Collections.Generic;
 
-namespace VR.Domain
+namespace A_D.Domain
 {
     public class SampleHomeSetting
     {

@@ -1,7 +1,7 @@
-﻿using System;
-using A_D.Domain.Models;
+﻿using A_D.Domain.Models;
+using System;
 
-namespace VR.Domain
+namespace A_D.Domain
 {
     public class PayRate
     {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace A_D.Domain.Models
+﻿namespace A_D.Domain.Models
 {
     public class FacilityDistance
     {

@@ -49,7 +49,7 @@ namespace A_D.Data.Configuration
                 .WithMany(s => s.Consumers)
                 .HasForeignKey("SampleRace_Id")
                 .OnDelete(DeleteBehavior.Restrict);
-            builder.HasOne(c=>c.StateMailing).WithMany(s=>s.ConsumersMailing).HasForeignKey("State_Id_Mailing").OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(c => c.StateMailing).WithMany(s => s.ConsumersMailing).HasForeignKey("State_Id_Mailing").OnDelete(DeleteBehavior.Restrict);
             builder.HasOne(c => c.StatePhysical)
                 .WithMany(s => s.ConsumersPhysical)
                 .HasForeignKey("State_Id_Physical")
@@ -84,7 +84,7 @@ namespace A_D.Data.Configuration
             builder.Property(c => c.DateCreate).HasDefaultValueSql("GETDATE()").ValueGeneratedOnAdd();
             builder.Property(c => c.SourceCreate).HasMaxLength(200);
             builder.Property(c => c.SourceModify).HasMaxLength(200);
-            builder.HasIndex(c => new {c.Sample_Id, c.VRID}).IsUnique();
+            builder.HasIndex(c => new { c.Sample_Id, c.VRID }).IsUnique();
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using VR.Domain;
 
 namespace A_D.Domain.Models
 {

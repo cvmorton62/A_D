@@ -1,7 +1,6 @@
 ﻿using A_D.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
 
 namespace A_D.Data.Configuration
 {
@@ -19,7 +18,7 @@ namespace A_D.Data.Configuration
                 .HasForeignKey("RescheduleReason_Id")
                 .OnDelete(DeleteBehavior.Restrict);
             builder.Property(p => p.DateScheduleOriginal).HasColumnType("date");
-            builder.HasIndex(p => new { p.ProjectQOL_Facility_Id, p.DateScheduleOriginal}).IsUnique();
+            builder.HasIndex(p => new { p.ProjectQOL_Facility_Id, p.DateScheduleOriginal }).IsUnique();
             builder.Property(p => p.DateCreate).HasDefaultValueSql("GETDATE()").ValueGeneratedOnAdd();
             builder.Property(p => p.SourceCreate).HasMaxLength(200);
             builder.Property(p => p.SourceModify).HasMaxLength(200);

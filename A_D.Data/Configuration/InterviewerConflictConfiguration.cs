@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using A_D.Domain.Models;
+﻿using A_D.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -24,7 +21,7 @@ namespace A_D.Data.Configuration
                 .WithMany(p => p.InterviewerConflicts)
                 .HasForeignKey("ProjectQOL_Facility_Id")
                 .OnDelete(DeleteBehavior.Restrict);
-            builder.HasIndex(i => new { i.Interviewer_Id_A, i.Interviewer_Id_B, i.ProjectQOL_Facility_Id}).IsUnique();
+            builder.HasIndex(i => new { i.Interviewer_Id_A, i.Interviewer_Id_B, i.ProjectQOL_Facility_Id }).IsUnique();
             builder.Property(i => i.Comment).HasMaxLength(1000);
         }
     }

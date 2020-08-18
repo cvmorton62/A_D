@@ -5,91 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Configuration\AssignmentConfiguration.cs" />
-    <Compile Remove="Configuration\CensusConfiguration.cs" />
-    <Compile Remove="Configuration\ConsumerConfiguration.cs" />
-    <Compile Remove="Configuration\ConsumerContactConfiguration.cs" />
-    <Compile Remove="Configuration\ConsumerGuardianConfiguration.cs" />
-    <Compile Remove="Configuration\ConsumerNoteConfiguration.cs" />
-    <Compile Remove="Configuration\CountyConfiguration.cs" />
-    <Compile Remove="Configuration\DateConflictConfiguration.cs" />
-    <Compile Remove="Configuration\DeviceConfiguration.cs" />
-    <Compile Remove="Configuration\DeviceDeploymentConfiguration.cs" />
-    <Compile Remove="Configuration\DeviceModelConfiguration.cs" />
-    <Compile Remove="Configuration\DeviceNfieldVersionConfiguration.cs" />
-    <Compile Remove="Configuration\DeviceNoteConfiguration.cs" />
-    <Compile Remove="Configuration\DeviceOSConfiguration.cs" />
-    <Compile Remove="Configuration\DocumentFormatConfiguration.cs" />
-    <Compile Remove="Configuration\FacilityConfiguration.cs" />
-    <Compile Remove="Configuration\FacilityConflictConfiguration.cs" />
-    <Compile Remove="Configuration\FacilityContactConfiguration.cs" />
-    <Compile Remove="Configuration\FacilityDistanceConfiguration.cs" />
-    <Compile Remove="Configuration\FacilityNoteConfiguration.cs" />
-    <Compile Remove="Configuration\FacilityNoteThemeConfiguration.cs" />
-    <Compile Remove="Configuration\IncentiveConfiguration.cs" />
-    <Compile Remove="Configuration\IncompleteCodeConfiguration.cs" />
-    <Compile Remove="Configuration\InterviewerConfiguration.cs" />
-    <Compile Remove="Configuration\InterviewerConflictConfiguration.cs" />
-    <Compile Remove="Configuration\InterviewerEmployerConfiguration.cs" />
-    <Compile Remove="Configuration\InterviewerNoteConfiguration.cs" />
-    <Compile Remove="Configuration\InterviewerNoteThemeConfiguration.cs" />
-    <Compile Remove="Configuration\Interviewer_LanguageConfiguration.cs" />
-    <Compile Remove="Configuration\LanguageConfiguration.cs" />
-    <Compile Remove="Configuration\NotifyingPartyConfiguration.cs" />
-    <Compile Remove="Configuration\NotInterviewedCodeConfiguration.cs" />
-    <Compile Remove="Configuration\NotInterviewedQOLConfiguration.cs" />
-    <Compile Remove="Configuration\PayRateConfiguration.cs" />
-    <Compile Remove="Configuration\ProjectConfiguration.cs" />
-    <Compile Remove="Configuration\ProjectNCIConfiguration.cs" />
-    <Compile Remove="Configuration\ProjectQOLConfiguration.cs" />
-    <Compile Remove="Configuration\ProjectQOL_FacilityConfiguration.cs" />
-    <Compile Remove="Configuration\ProjectQOL_FacilityLinkConfiguration.cs" />
-    <Compile Remove="Configuration\ProjectQOL_FacilityRescheduleConfiguration.cs" />
-    <Compile Remove="Configuration\ProjectQOL_FacilityScheduleConfiguration.cs" />
-    <Compile Remove="Configuration\ProjectQOL_FacilitySchedule_InterviewerConfiguration.cs" />
-    <Compile Remove="Configuration\Project_LanguageConfiguration.cs" />
-    <Compile Remove="Configuration\Project_User_UserRoleConfiguration.cs" />
-    <Compile Remove="Configuration\PSAConfiguration.cs" />
-    <Compile Remove="Configuration\PSARegionConfiguration.cs" />
-    <Compile Remove="Configuration\RecommendationConfiguration.cs" />
-    <Compile Remove="Configuration\RepresentativeListStatusConfiguration.cs" />
-    <Compile Remove="Configuration\RepresentativeSurveyBatchConfiguration.cs" />
-    <Compile Remove="Configuration\RepresentativeSurveyMethod.cs" />
-    <Compile Remove="Configuration\RescheduleReasonConfiguration.cs" />
-    <Compile Remove="Configuration\RestartQOLConfiguration.cs" />
-    <Compile Remove="Configuration\ReturnVisitReasonConfiguration.cs" />
-    <Compile Remove="Configuration\SampleAgeGroupConfiguration.cs" />
-    <Compile Remove="Configuration\SampleAgeGroupMapConfiguration.cs" />
-    <Compile Remove="Configuration\SampleAgencyConfiguration.cs" />
-    <Compile Remove="Configuration\SampleAgencyMapConfiguration.cs" />
-    <Compile Remove="Configuration\SampleCCOConfiguration.cs" />
-    <Compile Remove="Configuration\SampleCCOMapConfiguration.cs" />
-    <Compile Remove="Configuration\SampleConfiguration.cs" />
-    <Compile Remove="Configuration\SampleEthnicityConfiguration.cs" />
-    <Compile Remove="Configuration\SampleEthnicityMapConfiguration.cs" />
-    <Compile Remove="Configuration\SampleGenderConfiguration.cs" />
-    <Compile Remove="Configuration\SampleGenderMapConfiguration.cs" />
-    <Compile Remove="Configuration\SampleGeographyConfiguration.cs" />
-    <Compile Remove="Configuration\SampleGeographyMapConfiguration.cs" />
-    <Compile Remove="Configuration\SampleHomeSettingConfiguration.cs" />
-    <Compile Remove="Configuration\SampleHomeSettingMapConfiguration.cs" />
-    <Compile Remove="Configuration\SampleLanguageConfiguration.cs" />
-    <Compile Remove="Configuration\SampleLanguageMapConfiguration.cs" />
-    <Compile Remove="Configuration\SampleProgramConfiguration.cs" />
-    <Compile Remove="Configuration\SampleProgramMapConfiguration.cs" />
-    <Compile Remove="Configuration\SampleRaceConfiguration.cs" />
-    <Compile Remove="Configuration\SampleRaceMapConfiguration.cs" />
-    <Compile Remove="Configuration\SampleRateRepresentativeConfiguration.cs" />
-    <Compile Remove="Configuration\SampleRateResidentConfiguration.cs" />
-    <Compile Remove="Configuration\SeparationReasonConfiguration.cs" />
-    <Compile Remove="Configuration\StateConfiguration.cs" />
-    <Compile Remove="Configuration\SurveyQOLConfiguration.cs" />
-    <Compile Remove="Configuration\UserConfiguration.cs" />
-    <Compile Remove="Configuration\UserRoleConfiguration.cs" />
-    <Compile Remove="Configuration\VisitCodeConfiguration.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
@@ -100,10 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\A_D.Domain\A_D.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Configuration\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
-﻿namespace VR.Domain
+﻿using A_D.Domain;
+
+namespace AD.Domain
 {
     public class SampleRaceMap
     {

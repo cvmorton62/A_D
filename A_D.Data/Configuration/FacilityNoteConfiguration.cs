@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using A_D.Domain.Models;
+﻿using A_D.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
