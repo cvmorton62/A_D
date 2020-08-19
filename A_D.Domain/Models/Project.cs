@@ -26,6 +26,7 @@ namespace A_D.Domain.Models
         public ProjectNCI ProjectNCI { get; set; }
         public ProjectQOL ProjectQOL { get; set; }
         public State State { get; set; }
+        public List<Project_Interviewer> Projects_Interviewers { get; set; }
         public List<Project_Language> Projects_Languages { get; set; }
         public List<Project_User_UserRole> Projects_Users_UserRoles { get; set; }
     }

@@ -28,8 +28,8 @@ namespace A_D.Data
         public DbSet<DeviceOS> DeviceOS { get; set; }
         public DbSet<DocumentFormat> DocumentFormat { get; set; }
         public DbSet<Facility> Facility { get; set; }
-        public DbSet<FacilityContact> FacilityContact { get; set; }
         public DbSet<FacilityConflict> FacilityConflict { get; set; }
+        public DbSet<FacilityContact> FacilityContact { get; set; }
         public DbSet<FacilityDistance> FacilityDistance { get; set; }
         public DbSet<FacilityNote> FacilityNote { get; set; }
         public DbSet<FacilityNoteTheme> FacilityNoteTheme { get; set; }
@@ -45,6 +45,7 @@ namespace A_D.Data
         public DbSet<NotInterviewedQOL> NotInterviewedQOL { get; set; }
         public DbSet<PayRate> PayRate { get; set; }
         public DbSet<Project> Project { get; set; }
+        public DbSet<Project_Interviewer> Project_Interviewer { get; set; }
         public DbSet<Project_Language> Project_Language { get; set; }
         public DbSet<Project_User_UserRole> Project_User_UserRole { get; set; }
         public DbSet<ProjectNCI> ProjectNCI { get; set; }
@@ -57,15 +58,19 @@ namespace A_D.Data
         public DbSet<PSA> PSA { get; set; }
         public DbSet<PSARegion> PSARegion { get; set; }
         public DbSet<Recommendation> Recommendation { get; set; }
+        public DbSet<RefusalReasonNCI> RefusalReasonNCI { get; set; }
         public DbSet<RepresentativeListStatus> RepresentativeListStatus { get; set; }
         public DbSet<RepresentativeSurveyBatch> RepresentativeSurveyBatch { get; set; }
         public DbSet<RepresentativeSurveyMethod> RepresentativeSurveyMethod { get; set; }
         public DbSet<RescheduleReason> RescheduleReason { get; set; }
         public DbSet<RestartQOL> RestartQOL { get; set; }
+        public DbSet<ResultCategoryNCI> ResultCategoryNCI { get; set; }
         public DbSet<ResultCodeQOLIncomplete> ResultCodeQOLIncomplete { get; set; }
         public DbSet<ResultCodeQOLNotInterviewed> ResultCodeQOLNotInterviewed { get; set; }
+        public DbSet<ResultNCI> ResultNCI { get; set; }
         public DbSet<ReturnVisitReason> ReturnVisitReason { get; set; }
         public DbSet<Sample> Sample { get; set; }
+        public DbSet<Sample_ResultCategoryNCI> Sample_ResultCategoryNCI { get; set; }
         public DbSet<SampleAgeGroup> SampleAgeGroup { get; set; }
         public DbSet<SampleAgeGroupMap> SampleAgeGroupMap { get; set; }
         public DbSet<SampleAgency> SampleAgency { get; set; }
@@ -90,6 +95,7 @@ namespace A_D.Data
         public DbSet<SampleRateResident> SampleRateResident { get; set; }
         public DbSet<SeparationReason> SeparationReason { get; set; }
         public DbSet<State> State { get; set; }
+        public DbSet<StatusLogNCI> StatusLogNCI { get; set; }
         public DbSet<SurveyQOL> SurveyQOL { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<User> UserRole { get; set; }
@@ -130,6 +136,7 @@ namespace A_D.Data
             modelBuilder.ApplyConfiguration(new NotInterviewedQOLConfiguration());
             modelBuilder.ApplyConfiguration(new PayRateConfiguration());
             modelBuilder.ApplyConfiguration(new ProjectConfiguration());
+            modelBuilder.ApplyConfiguration(new Project_InterviewerConfiguration());
             modelBuilder.ApplyConfiguration(new Project_LanguageConfiguration());
             modelBuilder.ApplyConfiguration(new Project_User_UserRoleConfiguration());
             modelBuilder.ApplyConfiguration(new ProjectNCIConfiguration());
@@ -142,15 +149,19 @@ namespace A_D.Data
             modelBuilder.ApplyConfiguration(new PSAConfiguration());
             modelBuilder.ApplyConfiguration(new PSARegionConfiguration());
             modelBuilder.ApplyConfiguration(new RecommendationConfiguration());
+            modelBuilder.ApplyConfiguration(new RefusalReasonNCIConfiguration());
             modelBuilder.ApplyConfiguration(new RepresentativeListStatusConfiguration());
             modelBuilder.ApplyConfiguration(new RepresentativeSurveyBatchConfiguration());
             modelBuilder.ApplyConfiguration(new RepresentativeSurveyMethodConfiguration());
             modelBuilder.ApplyConfiguration(new RescheduleReasonConfiguration());
             modelBuilder.ApplyConfiguration(new RestartQOLConfiguration());
+            modelBuilder.ApplyConfiguration(new ResultCategoryNCIConfiguration());
             modelBuilder.ApplyConfiguration(new ResultCodeQOLIncompleteConfiguration());
             modelBuilder.ApplyConfiguration(new ResultCodeQOLNotInterviewedConfiguration());
+            modelBuilder.ApplyConfiguration(new ResultNCIConfiguration());
             modelBuilder.ApplyConfiguration(new ReturnVisitReasonConfiguration());
             modelBuilder.ApplyConfiguration(new SampleConfiguration());
+            modelBuilder.ApplyConfiguration(new Sample_ResultCategoryNCIConfiguration());
             modelBuilder.ApplyConfiguration(new SampleAgeGroupConfiguration());
             modelBuilder.ApplyConfiguration(new SampleAgeGroupMapConfiguration());
             modelBuilder.ApplyConfiguration(new SampleAgencyConfiguration());
@@ -175,6 +186,7 @@ namespace A_D.Data
             modelBuilder.ApplyConfiguration(new SampleRateResidentConfiguration());
             modelBuilder.ApplyConfiguration(new SeparationReasonConfiguration());
             modelBuilder.ApplyConfiguration(new StateConfiguration());
+            modelBuilder.ApplyConfiguration(new StatusLogNCIConfiguration());
             modelBuilder.ApplyConfiguration(new SurveyQOLConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new UserRoleConfiguration());

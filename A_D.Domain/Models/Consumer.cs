@@ -71,5 +71,7 @@ namespace A_D.Domain.Models
         public ConsumerGuardian ConsumerGuardian { get; set; }
         public List<ConsumerNote> ConsumerNotes { get; set; }
         public Assignment Assignment { get; set; }
+        public List<StatusLogNCI> StatusLogsNCI { get; set; }
+
     }
 }

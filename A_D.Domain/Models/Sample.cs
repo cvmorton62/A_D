@@ -18,5 +18,6 @@ namespace A_D.Domain.Models
         public ProjectNCI ProjectNCI { get; set; }
         public List<PayRate> PayRates { get; set; }
         public List<Incentive> Incentives { get; set; }
+        public List<Sample_ResultCategoryNCI> Samples_ResultCategoriesNCI { get; set; }
     }
 }

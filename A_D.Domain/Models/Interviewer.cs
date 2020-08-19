@@ -43,5 +43,9 @@ namespace A_D.Domain.Models
         public List<SurveyQOL> SurveysQOL { get; set; }
         public List<NotInterviewedQOL> NotInterviewedsQOL { get; set; }
         public List<RestartQOL> RestartsQOL { get; set; }
+        public List<StatusLogNCI> StatusLogsNCI { get; set; }
+        public List<Project_Interviewer> Projects_Interviewers { get; set; }
+        public List<Project_Interviewer> Projects_PeerInterviewers { get; set; }
+        public List<Project_Interviewer> Projects_QAMInterviewers { get; set; }
     }
 }
